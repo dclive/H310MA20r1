@@ -1,4 +1,4 @@
-# OpenCore(0.7.0) configuration on Gigabyte H310M A 2.0 R1
+# OpenCore(0.7.4) configuration on Gigabyte H310M A 2.0 R1
 Hackintosh EFI Information for Gigabyte H310M A 2.0 R1 
 
 
