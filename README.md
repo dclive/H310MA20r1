@@ -1,5 +1,4 @@
-# H310MA20r1
-Hackintosh EFI Information for Gigabyte H310M A 2.0 R1 
+# Hackintosh EFI Information for Gigabyte H310M A 2.0 R1
 
 ![AboutThisMac](https://user-images.githubusercontent.com/4536776/134783342-b85427cf-c6ff-4f68-b2ae-fa7fcd48840c.png)
 
