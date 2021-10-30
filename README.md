@@ -84,3 +84,8 @@ Now let's fix your MAC address (ROM)
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.
 * If the resulting USB stick won't boot, a quick first-order check is to use OCAT to update OpenCore (check the tooltips and icons at the top of the window) on your USB stick, and then try booting again.  
 * Otherwise, please leave comments/issues here.
+
+**Updates**
+
+* You can easily update to Monterey 12.01 using this EFI, and you can use OCAT to update the EFI with the latest OpenCore .75 and associated KEXT/etc. files.  
+
