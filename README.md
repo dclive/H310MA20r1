@@ -4,7 +4,7 @@
 
 **Tested macOS**
 
-* Big Sur 12.01 with OC75, OC74 Nightlies
+* Big Sur 11.6 (or 12.01) with OC75, OC74 Nightlies
 
 **Hardware**
 
