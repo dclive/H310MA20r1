@@ -4,17 +4,15 @@
 
 **Tested macOS**
 
-* Big Sur 11.6 with OC74 nightly 24/9/2021
+* Big Sur 12.01 with OC75, OC74 Nightlies
 
 **Hardware**
 
-* Gigabyte H310M A 2.0 R1 (BIOS F5a)
+* Gigabyte H310M A 2.0 R1 (BIOS F5a, F5)
 * Intel i5-9400
 * Radeon RX 570 4GB
 * 16GB RAM
 * 500GB SSD
-* EVGA SFX PSU
-* NR200P Case
 
 **Working**
 
@@ -53,7 +51,7 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for Big Sur 11.6 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Big Sur, including the terminal command to write the download to the USB stick.
+* Prepare a USB boot disk for Big Sur 11.6/12.01 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Big Sur, including the terminal command to write the download to the USB stick.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture:
@@ -87,5 +85,5 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* You can easily update to Monterey 12.01 using this EFI, and you can use OCAT to update the EFI with the latest OpenCore .75 and associated KEXT/etc. files.  
+* You can easily update to Monterey 12.01 using this EFI, and you can use OCAT to update the EFI with the latest OpenCore .75 and associated KEXT/etc. files.  BIOS F5 from Late November 2021 works properly with no (known) issues.
 
