@@ -1,6 +1,6 @@
 # Hackintosh EFI Information for Gigabyte H310M A 2.0 R1
 
-![](/Applications/Markdown/MontereySplash.png)
+![MontereySplash](/Applications/Markdown/MontereySplash.png)
 
 **Tested macOS**
 
@@ -55,7 +55,7 @@ You will need to do the following:
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  
 
-![](/Applications/Markdown/FoldersView.png)
+![FoldersView](/Applications/Markdown/FoldersView.png)
 
 * The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
 
