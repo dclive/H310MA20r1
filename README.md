@@ -1,6 +1,6 @@
 # Hackintosh EFI Information for Gigabyte H310M A 2.0 R1
 
-![MontereySplash](/Applications/Markdown/MontereySplash.png)
+
 
 **Tested macOS**
 
@@ -53,9 +53,7 @@ You will need to do the following:
 * Prepare a USB boot disk for 12.01 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
-* Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  
-
-![Screen Shot 2021-12-09 at 11.34.13 PM](/Users/david/Desktop/Screen Shot 2021-12-09 at 11.34.13 PM.png)
+* Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  [Picture temporarily removed; pls check later.]
 
 * The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
 
