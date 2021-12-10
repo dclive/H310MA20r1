@@ -1,23 +1,23 @@
 # Hackintosh EFI Information for Gigabyte H310M A 2.0 R1
 
-![AboutThisMac](https://user-images.githubusercontent.com/4536776/134783342-b85427cf-c6ff-4f68-b2ae-fa7fcd48840c.png)
+![](/Applications/Markdown/MontereySplash.png)
 
 **Tested macOS**
 
-* Big Sur 11.6 (or 12.01) with OC75, OC74 Nightlies
+* Monterey 12.01 with OpenCore .76 12/6/2021
 
 **Hardware**
 
-* Gigabyte H310M A 2.0 R1 (BIOS F5a, F5)
+* Gigabyte H310M A 2.0 R1 (BIOS F5)
 * Intel i5-9400
 * Radeon RX 570 4GB
 * 16GB RAM
-* 500GB SSD
+* 500GB SATA SSD
 
 **Working**
 
 * Bluetooth, Wi-Fi (Fenvi FV-T919) and ethernet (LOM, the Intel integrated chip)
-* HDMI Audio
+* HDMI Audio, Motherboard Audio
 * Sleep / Wake
 * App Store
 * Apple Watch unlock, AirDrop
@@ -25,7 +25,6 @@
 
 **Untested**
 
-* Motherboard Audio
 * Time Machine
 * Handoff/Continuity and more advanced Bluetooth/wifi integrations
 
@@ -51,18 +50,18 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for Big Sur 11.6/12.01 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Big Sur, including the terminal command to write the download to the USB stick.
+* Prepare a USB boot disk for 12.01 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
-* Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture:
+* Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  
 
-![EFI Layout](https://user-images.githubusercontent.com/4536776/134783624-10b0c7ba-fb29-4cf1-8017-230d22f8e18b.png)
+![](/Applications/Markdown/FoldersView.png)
 
 * The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
 
-Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *before* you boot into MacOS for the first time with the right serials and ROM info:
+Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I suggest configuring it a bit *before* you boot into MacOS for the first time with the right serials and ROM info:
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button on the left side of the window and updating.  Don't continue until you've done this.
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  In the future, be sure to update to the latest OCAT version by finding the update button on the left side of the window and updating.  
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row.
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the iMacPro1,1.  Then click GENERATE right next to the iMacPro1,1 box.  Your serial numbers are now set up.
@@ -73,17 +72,21 @@ Now let's fix your MAC address (ROM)
 * [Using Windows, if Windows is installed on this motherboard] Go to Windows' commandline/powershell interface.  Type 'ipconfig /all' and find your ethernet adapter.  Find the line "Physical Address" with xx-xx-xx-xx-xx-xx letters to the right on that same line.  Key in those letters and numbers, without the -, in the ROM box.
 * [The easy way; untested] Click GENERATE immediately to the right of the ROM box.
 * Serialization and ROM setup is now complete.  Press the SAVE icon in OCAT and then quit OCAT.
+* **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.
 * Your USB stick is ready to use to boot your Mac and install MacOS.  
 
 **Final Steps**
 
 * Assuming no other issues, your setup should now be complete.  Restart, press F12 at the Gigabyte screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EFI partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). Do note:  Until you've copied the EFI folder from your USB stick to your SSD's EFI partition, you must continue to F12-boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EFI partition on the SSD, then you'll no longer need to use the USB stick to boot.  
-* Versioning on the zipfile is V100.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  Note this has nothing to do with the versioning of your motherboard.
+* Versioning on the zipfile is V101.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  Note this has nothing to do with the versioning of your motherboard or OpenCore.
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.
-* If the resulting USB stick won't boot, a quick first-order check is to use OCAT to update OpenCore (check the tooltips and icons at the top of the window) on your USB stick, and then try booting again.  
+* If the resulting USB stick won't boot, a quick first-order check is to use OCAT to update OpenCore (check the tooltips and icons at the top of the window) on your USB stick, allow OCAT to fix and update the config.plist (just click SAVE in OCAT once you've opened your config.plist), and then try booting again.  
 * Otherwise, please leave comments/issues here.
 
 **Updates**
 
-* You can easily update to Monterey 12.01 using this EFI, and you can use OCAT to update the EFI with the latest OpenCore .75 and associated KEXT/etc. files.  BIOS F5 from Late November 2021 works properly with no (known) issues.
+* There's nothing else to update to at this time; this is the latest MacOS and the latest OpenCore available.
 
+**Changelog**
+
+* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OC76 and updates a few corresponding kexts like lilu and whatevergreen.  
