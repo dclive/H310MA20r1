@@ -55,7 +55,7 @@ You will need to do the following:
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  
 
-![FoldersView](/Applications/Markdown/FoldersView.png)
+![Screen Shot 2021-12-09 at 11.34.13 PM](/Users/david/Desktop/Screen Shot 2021-12-09 at 11.34.13 PM.png)
 
 * The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
 
