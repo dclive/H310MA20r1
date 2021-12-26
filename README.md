@@ -4,7 +4,7 @@
 
 **Tested macOS**
 
-* Monterey 12.01 with OpenCore .76 12/6/2021
+* Monterey 12.1 with OpenCore .76 12/6/2021
 
 **Hardware**
 
@@ -50,7 +50,7 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for 12.01 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.
+* Prepare a USB boot disk for 12.1 installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  [Picture temporarily removed; pls check later.]
@@ -70,7 +70,7 @@ Now let's fix your MAC address (ROM)
 * [Using Windows, if Windows is installed on this motherboard] Go to Windows' commandline/powershell interface.  Type 'ipconfig /all' and find your ethernet adapter.  Find the line "Physical Address" with xx-xx-xx-xx-xx-xx letters to the right on that same line.  Key in those letters and numbers, without the -, in the ROM box.
 * [The easy way; untested] Click GENERATE immediately to the right of the ROM box.
 * Serialization and ROM setup is now complete.  Press the SAVE icon in OCAT and then quit OCAT.
-* **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.
+* **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.  Until complete, do not use the iServices.
 * Your USB stick is ready to use to boot your Mac and install MacOS.  
 
 **Final Steps**
