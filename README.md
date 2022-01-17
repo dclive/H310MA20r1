@@ -5,6 +5,7 @@
 **Tested macOS**
 
 * Monterey 12.1 with OpenCore .76 12/6/2021
+* Using OpenCore Aux Tools to update to OpenCore .77 works flawlessly
 
 **Hardware**
 
@@ -70,7 +71,7 @@ Now let's fix your MAC address (ROM)
 * [Using Windows, if Windows is installed on this motherboard] Go to Windows' commandline/powershell interface.  Type 'ipconfig /all' and find your ethernet adapter.  Find the line "Physical Address" with xx-xx-xx-xx-xx-xx letters to the right on that same line.  Key in those letters and numbers, without the -, in the ROM box.
 * [The easy way; untested] Click GENERATE immediately to the right of the ROM box.
 * Serialization and ROM setup is now complete.  Press the SAVE icon in OCAT and then quit OCAT.
-* **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.  Until complete, do not use the iServices.
+* **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.  Until complete, do not use the iServices; do not log into any Apple cloud services.
 * Your USB stick is ready to use to boot your Mac and install MacOS.  
 
 **Final Steps**
@@ -83,7 +84,7 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* There's nothing else to update to at this time; this is the latest MacOS and the latest OpenCore available.
+* Using OCAT to update to OpenCore .77 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
