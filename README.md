@@ -9,7 +9,7 @@
 
 **Hardware**
 
-* Gigabyte H310M A 2.0 R1 (BIOS F5)
+* Gigabyte H310M A 2.0 R1 (BIOS F5, 11/29/21)
 * Intel i5-9400
 * Radeon RX 570 4GB
 * 16GB RAM
