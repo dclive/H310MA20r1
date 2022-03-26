@@ -84,8 +84,8 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .77 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .79 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
-* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OC76 and updates a few corresponding kexts like lilu and whatevergreen.  
+* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  
