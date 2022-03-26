@@ -5,7 +5,7 @@
 **Tested macOS**
 
 * Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
-* Using OpenCore Aux Tools to update to OpenCore .77 works flawlessly.  Use the attached EFI and immediately update to OC77; it works fine.  
+* Using OpenCore Aux Tools to update to OpenCore .79 works flawlessly.  Use the attached EFI and immediately update to OC79; it works fine.  
 
 **Hardware**
 
