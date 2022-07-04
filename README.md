@@ -29,7 +29,7 @@
 **Untested**
 
 * Time Machine
-* Handoff/Continuity and more advanced Bluetooth/wifi integrations
+* Handoff/Continuity, Universal Control and more advanced Bluetooth/wifi integrations
 
 **Not Working**
 
