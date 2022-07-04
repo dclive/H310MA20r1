@@ -7,7 +7,7 @@
 * Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
 * Using OpenCore Aux Tools to update to OpenCore .81 works flawlessly.  Use the attached EFI and immediately update to OC81; it works fine.  
 * MacOS 12.4 works well.
-* **Note:**OC82 was released a few hours ago, and incredibly preliminary testing suggests it won't boot with this setup and normal use of the OCAT tool to handle the update.  Proceed to OC82 carefully & make backups.  OC81 is still the suggested OC version for now.
+* Note: OC82 was released a few hours ago, and incredibly preliminary testing suggests it won't boot with this setup and normal use of the OCAT tool to handle the update.  Proceed to OC82 carefully & make backups.  OC81 is still the suggested OC version for now.
 
 **Hardware**
 
