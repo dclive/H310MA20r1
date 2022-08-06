@@ -5,17 +5,16 @@
 **Tested macOS**
 
 * Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
-* Using OpenCore Aux Tools to update to OpenCore .81 works flawlessly.  Use the attached EFI and immediately update to OC81; it works fine.  
-* MacOS 12.4 works well.
-* Note: OC82 was released a few hours ago, and incredibly preliminary testing suggests it won't boot with this setup and normal use of the OCAT tool to handle the update.  Proceed to OC82 carefully & make backups.  OC81 is still the suggested OC version for now.
+* Using OpenCore Aux Tools to update to OpenCore .82 works flawlessly.  Use the attached EFI and immediately update to OC82; it works fine.  
+* MacOS 12.5 works well either as an upgrade or as an initial install.
 
 **Hardware**
 
 * Gigabyte H310M A 2.0 R1 (BIOS F5, 11/29/21)
 * Intel i5-9400
-* Radeon RX 570 4GB
+* Radeon RX 580 8GB
 * 16GB RAM
-* 500GB SATA SSD
+* 1TB NVME SSD 
 
 **Working**
 
@@ -25,11 +24,11 @@
 * App Store
 * Apple Watch unlock, AirDrop
 * USB port mapping is complete, resulting in iPhone/iPads charging at 2100 ma, and Apple Watch at 1000 ma.  If yours (iPhone, iPad, Apple Watch) doesn't show this rate in About This Mac / System Report / USB, then your USB mapping may not be working correctly.  All 'A' USB ports on this motherboard, USB2 and USB3, are in use and 'active' (working).  USB-C port works, but is only lightly tested.
+* Time Machine works.  But note that for it to fully and really work, in the event of an SSD failure, you'd want to have the same EFi you made (post-customizations below with YOUR unique numbers in place!) present on the USB stick you'd need to boot from to attempt the Time Machine restore.  Broadly, make a backup of your fully working, finalized EFI/EPS partition, and put it on a USB stick, and ensure that will boot your machine.  Keep it forever as a backup. 
 
 **Untested**
 
-* Time Machine
-* Handoff/Continuity, Universal Control and more advanced Bluetooth/wifi integrations
+* Handoff/Continuity, Universal Control and more advanced Bluetooth/wifi integrations.  For most Hacks they have varying degrees of reliability.  
 
 **Not Working**
 
@@ -53,7 +52,7 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.
+* Prepare a USB boot disk for 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.  Be sure to format the USB stick in GUID, HFS+ format first! 
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  [Picture temporarily removed; pls check later.]
