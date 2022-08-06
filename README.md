@@ -5,7 +5,7 @@
 **Tested macOS**
 
 * Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
-* Using OpenCore Aux Tools to update to OpenCore .82 works flawlessly.  Use the attached EFI and immediately update to OC82; it works fine.  
+* Using OpenCore Aux Tools to update to OpenCore .83 works flawlessly.  Use the attached EFI and immediately update to OC83 and associated KEXTs that OCAT wants to update; it works fine.  
 * MacOS 12.5 works well either as an upgrade or as an initial install.
 
 **Hardware**
@@ -24,11 +24,11 @@
 * App Store
 * Apple Watch unlock, AirDrop
 * USB port mapping is complete, resulting in iPhone/iPads charging at 2100 ma, and Apple Watch at 1000 ma.  If yours (iPhone, iPad, Apple Watch) doesn't show this rate in About This Mac / System Report / USB, then your USB mapping may not be working correctly.  All 'A' USB ports on this motherboard, USB2 and USB3, are in use and 'active' (working).  USB-C port works, but is only lightly tested.
-* Time Machine works.  But note that for it to fully and really work, in the event of an SSD failure, you'd want to have the same EFi you made (post-customizations below with YOUR unique numbers in place!) present on the USB stick you'd need to boot from to attempt the Time Machine restore.  Broadly, make a backup of your fully working, finalized EFI/EPS partition, and put it on a USB stick, and ensure that will boot your machine.  Keep it forever as a backup. 
+* Time Machine works.  But note that for it to fully work, in the event of an SSD failure, you'd want to have the same EFi you made (post-customizations below with YOUR unique numbers in place!) present on the USB stick you'd need to boot from to attempt the Time Machine restore.  Broadly, make a backup of your fully working, finalized EFI/EPS partition, and put it on a USB stick, and ensure that will boot your machine.  Keep it forever as a backup.  This USB stick, with YOUR serials and numbers on it, is what permits Time Machine to identify the correct backup.  The USB sticks makes your Hack into a Mac. 
 
 **Untested**
 
-* Handoff/Continuity, Universal Control and more advanced Bluetooth/wifi integrations.  For most Hacks they have varying degrees of reliability.  
+* Handoff/Continuity, Universal Control and more advanced Bluetooth/wifi integrations.  For most Hacks they have varying degrees of reliability.  With integrated graphics it tends to work better.  Without, not as much.   
 
 **Not Working**
 
@@ -52,12 +52,12 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.  Be sure to format the USB stick in GUID, HFS+ format first! 
+* Prepare a USB boot disk for 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.  Be sure to format the USB stick in GUID, HFS+ format first.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  [Picture temporarily removed; pls check later.]
 
-* The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
+* The EFI/EPS partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile.
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I suggest configuring it a bit *before* you boot into MacOS for the first time with the right serials and ROM info:
 
@@ -85,7 +85,7 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .81 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .83 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
