@@ -5,8 +5,8 @@
 **Tested macOS**
 
 * Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
-* Using OpenCore Aux Tools to update to OpenCore .83 works flawlessly.  Use the attached EFI and immediately update to OC83 and associated KEXTs that OCAT wants to update; it works fine.  
-* MacOS 12.5 works well either as an upgrade or as an initial install.
+* Using OpenCore Aux Tools to update to OpenCore .84 works flawlessly.  Use the attached EFI and immediately update to OC84 and update associated KEXTs that OCAT wants to update; it works fine.  
+* MacOS 12.5.1 works well either as an upgrade or as an initial install.
 
 **Hardware**
 
@@ -85,7 +85,7 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .83 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .84 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
