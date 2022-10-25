@@ -4,9 +4,9 @@
 
 **Tested macOS**
 
-* Monterey 12.2 (21D49) with OpenCore .77 1/10/2022
-* Using OpenCore Aux Tools to update to OpenCore .84 works flawlessly.  Use the attached EFI and immediately update to OC84 and update associated KEXTs that OCAT wants to update; it works fine.  
-* MacOS 12.5.1 works well either as an upgrade or as an initial install.
+* Monterey 13.0 (21D49) with OpenCore .85 10/25/2022
+* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC85 and update associated KEXTs that OCAT wants to update; it works fine.  
+* MacOS 13 works well either as an upgrade or as an initial install.
 
 **Hardware**
 
@@ -52,7 +52,7 @@
 
 You will need to do the following:
 
-* Prepare a USB boot disk for 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.  Be sure to format the USB stick in GUID, HFS+ format first.
+* Prepare a USB boot disk for 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for Monterey, including the terminal command to write the download to the USB stick.  Be sure to format the USB stick in GUID, HFS+ format first.
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
 * Copy the contents of the attached zipfile to the USB stick, so that your files look something like the picture.  [Picture temporarily removed; pls check later.]
@@ -85,8 +85,8 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .84 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .85 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
-* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  
+* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  **NOTE:  YOU NEED TO UPGRADE TO OC85 YOURSELF.  Do this first, before you do any MacOS installations.  Things are much easier with the latest OC85 and the latest KEXTs.**  
