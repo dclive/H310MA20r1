@@ -5,7 +5,7 @@
 **Tested macOS**
 
 * Monterey 13.0 with OpenCore .85 10/25/2022
-* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC85 and update associated KEXTs that OCAT wants to update; it works fine.  
+* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC87 and update associated KEXTs that OCAT wants to update; it works fine.  
 * MacOS 13 works well either as an upgrade or as an initial install.
 
 **Hardware**
@@ -15,6 +15,7 @@
 * Radeon RX 580 8GB
 * 16GB RAM
 * 1TB NVME SSD 
+* Fenvi FV-T919 PCIe Wifi card (commonly sold on Amazon/NewEgg)
 
 **Working**
 
@@ -73,7 +74,8 @@ Now let's fix your MAC address (ROM)
 * [The easy way; untested] Click GENERATE immediately to the right of the ROM box.
 * Serialization and ROM setup is now complete.  Press the SAVE icon in OCAT and then quit OCAT.
 * **Note**:  Read https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html prior to using any Apple services like Chat and iCloud.  These details will correctly confirm that your serial information is viable.  Until complete, do not use the iServices; do not log into any Apple cloud services.
-* Your USB stick is ready to use to boot your Mac and install MacOS.  
+* Your USB stick is ready to use to boot your Mac and install MacOS.
+* You can also use SMBios from CorpNewt to do this too:  https://github.com/corpnewt/GenSMBIOS.    
 
 **Final Steps**
 
@@ -85,8 +87,8 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .85 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .87 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
-* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  **NOTE:  YOU NEED TO UPGRADE TO OC85 YOURSELF.  Do this first, before you do any MacOS installations.  Things are much easier with the latest OC85 and the latest KEXTs.**  
+* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  **NOTE:  YOU NEED TO UPGRADE TO OC87 YOURSELF.  Do this first, before you do any MacOS installations.  Things are much easier with the latest OpenCore and the latest KEXTs.**  
