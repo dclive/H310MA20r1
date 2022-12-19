@@ -5,7 +5,7 @@
 **Tested macOS**
 
 * Monterey 13.1 with OpenCore .87 12/13/2022
-* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC87 and update associated KEXTs that OCAT wants to update; it works fine.  
+* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC87 and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md#release-builds-vs-dev-builds shows the process.
 * MacOS 13.1 works well either as an upgrade or as an initial install.
 
 **Hardware**
