@@ -4,8 +4,8 @@
 
 **Tested macOS**
 
-* Monterey 13.1 with OpenCore .87 12/13/2022
-* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC87 and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md#release-builds-vs-dev-builds shows the process.
+* Monterey 13.1 with OpenCore .87 12/13/2022 [Jan 2, 2023:  OC88 works fine.]
+* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC88 and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md#release-builds-vs-dev-builds shows the process.
 * MacOS 13.1 works well either as an upgrade or as an initial install.
 
 **Hardware**
@@ -87,8 +87,8 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .87 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .88 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
-* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  **NOTE:  YOU NEED TO UPGRADE TO OC87 YOURSELF.  Do this first, before you do any MacOS installations.  Things are much easier with the latest OpenCore and the latest KEXTs.**  
+* The changes in v1.01 is simply OpenCore .76.  You can do the same thing by updating to the latest OCAT, ensuring your config.plist is loaded in it, and then selecting Edit/Syncronize Main Program, then saving your configuration (pressing the floppy disk icon).  That updates to OpenCore vLatest and updates a few corresponding kexts like lilu and whatevergreen.  **NOTE:  YOU NEED TO UPGRADE TO OC88 YOURSELF.  Do this first, before you do any MacOS installations.  Things are much easier with the latest OpenCore and the latest KEXTs.**  
