@@ -4,15 +4,15 @@
 
 **Tested macOS**
 
-* Monterey 13.1 with OpenCore .87 12/13/2022 [Jan 2, 2023:  OC88 works fine.]
+* Monterey 13.3.1 with OpenCore .87 12/13/2022 [April, 2023:  OC91 works fine.]
 * Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC88 and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md#release-builds-vs-dev-builds shows the process.
-* MacOS 13.1 works well either as an upgrade or as an initial install.
+* MacOS 13.3.1 works well either as an upgrade or as an initial install.
 
 **Hardware**
 
 * Gigabyte H310M A 2.0 R1 (BIOS F5, 11/29/21)
 * Intel i5-9400
-* Radeon RX 580 8GB
+* Radeon RX 580 8GB [Note: NVRAM agdpmod=pikera required for newer AMD cards, like 5700 or 6600]
 * 16GB RAM
 * 1TB NVME SSD 
 * Fenvi FV-T919 PCIe Wifi card (commonly sold on Amazon/NewEgg)
@@ -87,7 +87,7 @@ Now let's fix your MAC address (ROM)
 
 **Updates**
 
-* Using OCAT to update to OpenCore .88 (and associated kexts) works flawlessly.  
+* Using OCAT to update to OpenCore .91 (and associated kexts) works flawlessly.  
 
 **Changelog**
 
