@@ -5,7 +5,7 @@
 **Tested macOS**
 
 * Ventura, up to 13.4.  
-* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OC88 and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT shows the process I use.
+* Using OpenCore Aux Tools to update to OpenCore .vLatest works flawlessly.  Use the attached EFI and immediately update to OCxx and update associated KEXTs that OCAT wants to update; it works fine.  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT shows the process I use.  
 * MacOS 13.4 works well either as an upgrade or as an initial install.  OC92 works fine.  
 
 **Hardware**
